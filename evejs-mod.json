@@ -14,7 +14,7 @@
     {
       "mirror": "github",
       "priority": 1,
-      "url": "https://github.com/xxxuan42/evejs-mod-evejs-missile-retarget/releases/download/v1.6.1/evejs-missile-retarget-1.6.1.zip"
+      "url": "https://github.com/xxxuan42/evejs-mod-evejs-missile-retarget/releases/download/v1.6.2/evejs-missile-retarget-1.6.2.zip"
     }
   ],
   "evejsVersions": [
@@ -30,8 +30,8 @@
   ],
   "repo": "https://github.com/xxxuan42/evejs-mod-evejs-missile-retarget",
   "requiresRestart": true,
-  "sha256": "9c28cd5abc0e0685606d0223583803be4629417dd4ed269bc0a3d961d8d096a5",
-  "sizeBytes": 46643,
+  "sha256": "23f2e517a7a6a2c6b069f1c5cade2be594c7b1fe728f5c27784d1b9dd8d4a234",
+  "sizeBytes": 49932,
   "tags": [
     "导弹",
     "转火",
@@ -39,5 +39,5 @@
     "战斗",
     "自动"
   ],
-  "version": "1.6.1"
+  "version": "1.6.2"
 }
