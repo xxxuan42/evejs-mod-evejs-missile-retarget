@@ -8,30 +8,30 @@
   "changelog": "",
   "conflicts": [],
   "delisted": false,
-  "description": "玩家导弹发射后若原目标在命中前被击毁或消失，优先转火发射舰当前已锁定的目标；没有可用锁定目标时，自动改追附近最近的可达敌对目标。保留已飞行距离、弹药与剩余飞行时间；NPC / CONCORD 的导弹不生效，玩家反导防御导弹会改追最近的敌方导弹。目标移除前先接管，早于 bug-fixes 的同类逻辑执行。转火时除服务端状态同步外，还通过登录载荷下发客户端助手，在客户端直接把这颗导弹球的跟随目标改到新目标（客户端会忽略已存在球的 AddBalls2 mode 更新）。仅服务端内存补丁 + 登录表达式覆盖层，不改客户端文件、数据库与服务端源码。",
+  "description": "适配 EveJS 261125.3 / EVE 客户端 V24.02。玩家导弹发射后若原目标在命中前被击毁或消失，优先按锁定列表从左到右（最先锁定优先）转火发射舰当前已锁定的目标；没有可用锁定目标时，自动改追导弹当前位置最近的可达敌对目标。保留已飞行距离、弹药与剩余飞行时间；NPC / CONCORD 的导弹不生效，玩家反导防御导弹会改追最近的敌方导弹。目标移除前先接管，早于 bug-fixes 的同类逻辑执行。转火时除服务端状态同步外，还通过登录载荷下发客户端助手，在客户端直接把这颗导弹球的跟随目标改到新目标（V24.02 用 targetBall.model 的 trinity 场景模型）。仅服务端内存补丁 + 登录表达式覆盖层，不改客户端文件、数据库与服务端源码。",
   "displayName": "导弹自动转火",
   "downloadUrls": [
     {
       "mirror": "github",
       "priority": 1,
-      "url": "https://github.com/xxxuan42/evejs-mod-evejs-missile-retarget/releases/download/v1.6.2/evejs-missile-retarget-1.6.2.zip"
+      "url": "https://github.com/xxxuan42/evejs-mod-evejs-missile-retarget/releases/download/v1.7.1/evejs-missile-retarget-1.7.1.zip"
     }
   ],
   "evejsVersions": [
-    "261115.2"
+    "261125.3"
   ],
   "featured": false,
   "highlights": [],
   "history": [],
   "id": "evejs-missile-retarget",
-  "publishedAt": "2026-11-21",
+  "publishedAt": "2026-11-26",
   "readme": [
     "导弹还在飞，目标先死了？让它改追你当前锁定的目标。"
   ],
   "repo": "https://github.com/xxxuan42/evejs-mod-evejs-missile-retarget",
   "requiresRestart": true,
-  "sha256": "23f2e517a7a6a2c6b069f1c5cade2be594c7b1fe728f5c27784d1b9dd8d4a234",
-  "sizeBytes": 49932,
+  "sha256": "93609705bd420fb90f733c7f1c10f3f76b17cef24bc87ea7852a69b18ace1b96",
+  "sizeBytes": 51754,
   "tags": [
     "导弹",
     "转火",
@@ -39,5 +39,5 @@
     "战斗",
     "自动"
   ],
-  "version": "1.6.2"
+  "version": "1.7.1"
 }
